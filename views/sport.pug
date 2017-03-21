@@ -1,0 +1,11 @@
+doctype HTML
+head
+	title Sports
+body
+	h1 You fell in love with: #{sportVar}
+	- if (sportVar === "football"){
+		p Good Choice. Football is the best
+	- } else {
+		p Yeah i guess that #{sportVar} is Okay
+	- }
+		

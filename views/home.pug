@@ -1,0 +1,82 @@
+doctype HTML
+
+head
+	include ./head.pug
+body 
+	- myName = "Mike"
+	h1 Welcome to the pokemon headquarters, #{myName}
+	div
+		p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		p tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+	br
+	div
+		p first par below a div
+
+		p().
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+		p(id="4th paragraph",
+		class="lorem_ipsum very_important").
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+	ul
+		li#starter_list_item
+			a(href='#') Charmander
+		li#starter_list_item
+			a(href='#') Squirtle
+		li#starter_list_item
+			a(href='#') Bublasaur
+
+	- myName = "Steve"
+	p Hello #{myName}
+
+	- website = "http://bulbapedia.net"
+		a(href=website) Learn more about pokemon
+
+	- opList = ['Mewtwo', 'Dragonite', 'Zapdos']
+
+	ul
+		li#op_list_item
+			a(href='#') #{opList[0]}
+		li#op_list_item
+			a(href='#') #{opList[1]}
+		li#op_list_item
+			a(href='#') #{opList[2]}
+
+	- firstNameInput = {"type": "text", "name": "fName"}
+
+	span First Name
+	input(type = firstNameInput.type, name = firstNameInput.name)
+
+	- someInfo = "<i>Type Advantage</i>"
+
+	p !{someInfo}
+
+	- date = new Date()
+	- hour = date.getHours()
+	- minutes = date.getMinutes()
+	- time = hour + ":" + minutes
+	- if ((hour >= 6) && (hour <= 17)){
+		h3 Day Time
+		h3 #{time}
+	-	} else {
+		h3 Night Time
+		h3 #{time}
+	-	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
