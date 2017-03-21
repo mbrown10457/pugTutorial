@@ -3,13 +3,14 @@ doctype HTML
 head
 	Title Pokemon Birds
 	include ./head.pug
+	link(rel = "stylesheet", href = "http://localhost:3000/public/styles.css")
 
 body
 	div#banner 
-		h1 This is a list of the Pokemon Elite Birds
+		h1 This is a list of the Pokemon Legendary Birds
 	div#birdItems
 		ul
-			li: .Articuno 
+			li: .Articuno
 				a(href='#') Articuno
 			li: .Zapdos
 				a(href='#') Zapdos
@@ -27,20 +28,20 @@ body
 				tr: .birdHead
 					th Legendary Bird
 					th Element
-					th More Information and Coolness Rank
+					th Best Move:
 			tbody: .birdBody
 				tr
-					td Moltres
+					td.Moltres Moltres
 					td Fire
-					td: a(href='#') 3
+					td: a(href='#') Doesn't matter
 				tr
-					td Zapdos
+					td.Zapdos Zapdos
 					td Thunder
-					td: a(href='#') 1
+					td: a(href='#') All the moves
 				tr
-					td Articuno
+					td.Articuno Articuno
 					td Ice
-					td: a(href='#') 2
+					td: a(href='#') Still do not care!
 
 	div#userInputForms
 		form#userInfoForm(method = 'Post', action = '/user')

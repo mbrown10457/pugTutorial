@@ -1,0 +1,62 @@
+html{
+	font-family: Menlo;
+	-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+}
+body{
+	font-family: Menlo;
+	font-size: 14px;
+	color: #000000;
+	background: linen;
+	background: url(https://cdn.shutterstock.com/shutterstock/videos/754483/thumb/1.jpg);
+	background-repeat: no-repeat;
+}
+div{
+	background: #999999
+}
+ul{
+	font-size: 22px;
+}
+h1{
+	border: linen;
+	border-width: 5px;
+	border-style: solid;
+}
+input[type = "submit"]{
+	padding: 5px;
+	border: 2px solid #222;
+}
+#zapdosItems{
+	color: rgb(10, 10, 10);
+	text-shadow: 1px 1px #ff0000;
+	background: linen;
+	text-transform: uppercase;
+}
+#loremIpsumBlockText{
+	color: Red;
+	font-size: 11px;
+}
+#birdItems{
+ 	font-size: 18px;
+}
+#banner{
+	font-size: 25px;
+	color: Purple;
+}
+.Articuno{
+	font-size: 14px;
+	color: #D4F0FF;
+}
+.Moltres{
+	font-size: 14px;
+	color: Orange;
+}
+.Zapdos{
+	font-size: 14px;
+	color: Gold;
+}
+li:nth-of-type(2){
+	font-size: 17px;
+	background: purple;
+}
+
