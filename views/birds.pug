@@ -1,0 +1,84 @@
+doctype HTML
+
+head
+	Title Pokemon Birds
+	include ./head.pug
+
+body
+	div#banner 
+		h1 This is a list of the Pokemon Elite Birds
+	div#birdItems
+		ul
+			li: .Articuno 
+				a(href='#') Articuno
+			li: .Zapdos
+				a(href='#') Zapdos
+				ol#zapdosItems
+					li Lightning
+					li: b Flying
+					li: i Badass
+					img(src='http://vignette4.wikia.nocookie.net/pokemon/images/6/65/145Zapdos_Dream.png/revision/latest?cb=20140214165941')
+			li: .Moltres
+				a(href='#') Moltres
+
+	div#birdRankings
+		table#tableOfElements
+			thead
+				tr: .birdHead
+					th Legendary Bird
+					th Element
+					th More Information and Coolness Rank
+			tbody: .birdBody
+				tr
+					td Moltres
+					td Fire
+					td: a(href='#') 3
+				tr
+					td Zapdos
+					td Thunder
+					td: a(href='#') 1
+				tr
+					td Articuno
+					td Ice
+					td: a(href='#') 2
+
+	div#userInputForms
+		form#userInfoForm(method = 'Post', action = '/user')
+			p: .username
+					label
+						| Username:
+						span: input(type = 'text', name = 'username', placeholder = 'Username', label = "Username:")
+			p: .email
+					label
+						| Email:
+						input(type = 'email', name = 'email', placeholder = 'Email')
+			p: .password
+					label
+						| Password:
+						input(type = 'password', name = 'password', placeholder = 'Password')
+			p: .Age
+					label
+						| Age:
+						input(type = 'number', name = 'age', placeholder = 'Age')
+			p: .color 
+					label
+						| Choose your favorite color:
+						input(type = 'color')
+			p: .checkbox
+					label
+						| Remember me:
+						input(type = 'checkbox')
+			p: .submit
+					label
+						input(type = 'submit')
+
+p#loremIpsumBlockText.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
